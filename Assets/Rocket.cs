@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private int damageForce = 2;
     private Vector3 moveVector;
 
     void Start()
     {
-        moveVector = Vector3.up;
+        moveVector = Vector3.forward;
     }
 
     void FixedUpdate()
